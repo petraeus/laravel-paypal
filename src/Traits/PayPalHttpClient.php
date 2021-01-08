@@ -170,6 +170,10 @@ trait PayPalHttpClient
      */
     private function makeHttpRequest()
     {
+
+echo $this->apiUrl;
+echo str_repeat('<br>', 2);
+
         try {
             return $this->client->{$this->verb}(
                 $this->apiUrl,
